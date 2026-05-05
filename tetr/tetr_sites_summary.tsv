@@ -1,0 +1,33 @@
+site_id	start	end	strand	matched_seq	score	p_value	q_value	nearest_gene	gene_name	product	distance_bp	relation	gene_strand
+TetR_site_001	90695	90713	-	AGGATGATAACTTTAATCA	17.3465	9.14e-07	0.306	Sudilovsky_00071	secD	Protein translocase subunit SecD	0	inside	+
+TetR_site_002	461854	461872	+	TTGATGATGATCGTAATCA	25.3762	1.92e-10	0.00192	Sudilovsky_00417		hypothetical protein	52	upstream of	-
+TetR_site_003	461889	461907	-	ATGATGATGATCGTAATCT	23.3861	4.02e-09	0.0134	Sudilovsky_00418	nemA_1	N-ethylmaleimide reductase	50	upstream of	+
+TetR_site_004	489431	489449	+	GTGATGATGGCCGGAATCA	17.6238	7.68e-07	0.276	Sudilovsky_00442	uhpB	Signal transduction histidine-protein kinase/phosphatase UhpB	0	inside	-
+TetR_site_005	718939	718957	+	TGCATGATGACGGGTTTCA	18.3663	4.69e-07	0.261	Sudilovsky_00653	ygaP	Thiosulfate sulfurtransferase YgaP	35	upstream of	+
+TetR_site_006	899218	899236	-	AGCATCATTCCCGGATTGA	17.2376	9.77e-07	0.306	Sudilovsky_00816		hypothetical protein	0	inside	+
+TetR_site_007	1088140	1088158	+	TTGATGATAACGGCAATGA	20.6733	7.53e-08	0.151	Sudilovsky_00992	fadD	Long-chain-fatty-acid--CoA ligase	0	inside	+
+TetR_site_008	1118609	1118627	+	ATCATCGTAATGGTTTTGA	17.8911	6.47e-07	0.276	Sudilovsky_01025	ansA	L-asparaginase 1	0	inside	-
+TetR_site_009	1236235	1236253	+	ATCATGATGACGGCATTCA	22.6337	9.97e-09	0.025	Sudilovsky_01136		hypothetical protein	0	inside	-
+TetR_site_010	1385445	1385463	-	TTGATGATGATCTGAAAGA	18.4455	4.45e-07	0.261	Sudilovsky_01256		hypothetical protein	0	inside	-
+TetR_site_011	1522339	1522357	-	ATAATCAGTATGGTAATGA	17.6634	7.50e-07	0.276	Sudilovsky_01374	res	Toxin Res	47	downstream of	-
+TetR_site_012	2016962	2016980	-	ATGATGATGACGTCATTCA	19.297	2.38e-07	0.188	Sudilovsky_01855	trxB_2	Thioredoxin reductase	0	inside	+
+TetR_site_013	2415845	2415863	+	TTTATCAGAATGGGATTCA	18.0198	5.94e-07	0.276	Sudilovsky_02210	rnc	Ribonuclease 3	0	inside	-
+TetR_site_014	2432686	2432704	+	TTTATGATTATCGGAAACA	18.5644	4.09e-07	0.261	Sudilovsky_02232		hypothetical protein	28	upstream of	+
+TetR_site_015	2900615	2900633	-	ATCATGATGATCGAAATGA	24.0099	1.65e-09	0.00827	Sudilovsky_02726		hypothetical protein	0	inside	+
+TetR_site_016	3049440	3049458	-	AGCATGAGAATGGCAACCA	17.8614	6.59e-07	0.276	Sudilovsky_02857	satP	Succinate-acetate/proton symporter SatP	0	inside	+
+TetR_site_017	3173571	3173589	-	TTTATGGTAATGGAATTGA	18.2178	5.20e-07	0.274	Sudilovsky_02964	iclR	Transcriptional repressor IclR	24	upstream of	+
+TetR_site_018	3269858	3269876	-	ATCATCGTTACCGTAACGA	18.7426	3.59e-07	0.257	Sudilovsky_03075	trpS	Tryptophan--tRNA ligase	0	inside	-
+TetR_site_019	3326251	3326269	-	TGCATGATTACGGTATCTA	17.6832	7.40e-07	0.276	Sudilovsky_03122	malQ	4-alpha-glucanotransferase	0	inside	-
+TetR_site_020	3332654	3332672	-	ATTATGATAATCGAAAACA	19.6931	1.74e-07	0.188	Sudilovsky_03127	glpD	Aerobic glycerol-3-phosphate dehydrogenase	56	upstream of	+
+TetR_site_021	3481341	3481359	-	TTCATCAGGATCGTAACCT	19.7921	1.61e-07	0.188	Sudilovsky_03264	metL	Bifunctional aspartokinase/homoserine dehydrogenase 2	0	inside	-
+TetR_site_022	3557061	3557079	+	TTCATGATGCCGTTAACCA	18.396	4.60e-07	0.261	Sudilovsky_03331		hypothetical protein	0	inside	+
+TetR_site_023	3649340	3649358	-	AGGATGATTACCGCATCGA	17.8515	6.63e-07	0.276	Sudilovsky_03406	gmuD_2	6-phospho-beta-glucosidase GmuD	0	inside	-
+TetR_site_024	3681238	3681256	-	TTGATGATGCTGGTAATGT	19.6139	1.85e-07	0.188	Sudilovsky_03439		hypothetical protein	0	inside	+
+TetR_site_025	3708051	3708069	+	ATCATCAGAACGCTATCCA	17.2871	9.47e-07	0.306	Sudilovsky_03461	smvA	Methyl viologen resistance protein SmvA	48	upstream of	+
+TetR_site_026	3939474	3939492	-	ATGATGATGACGGAATTTT	17.8812	6.51e-07	0.276	Sudilovsky_03679	coaBC	Coenzyme A biosynthesis bifunctional protein CoaBC	0	inside	-
+TetR_site_027	4363239	4363257	-	AGCATCATGACCGATATGA	17.3267	9.25e-07	0.306	Sudilovsky_04062	mgtB	Magnesium-transporting ATPase, P-type 1	0	inside	-
+TetR_site_028	4639294	4639312	+	ATCATCGTGACGGAATTGA	19.2574	2.45e-07	0.188	Sudilovsky_04332		hypothetical protein	0	inside	+
+TetR_site_029	4793548	4793566	+	ATCATCATTGTCGTAATGA	19.2772	2.41e-07	0.188	Sudilovsky_04466	sbnD_2	Staphyloferrin B transporter	0	inside	-
+TetR_site_030	4821633	4821651	-	TGCATGAGAATCGTATTTA	19.9901	1.36e-07	0.188	Sudilovsky_04490		hypothetical protein	5	upstream of	+
+TetR_site_031	4959825	4959843	-	TTCATGATGCTGGGAAACA	19.3168	2.34e-07	0.188	Sudilovsky_04600	hipO	Hippurate hydrolase	0	inside	-
+TetR_site_032	4976370	4976388	+	TTAATGATGATCGAATAGT	17.6139	7.73e-07	0.276	Sudilovsky_04616	ppnN	Pyrimidine/purine nucleotide 5'-monophosphate nucleosidase	0	inside	-

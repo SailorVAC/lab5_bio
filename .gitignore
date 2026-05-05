@@ -1,0 +1,22 @@
+# Prokka intermediates we don't need in the repo
+annotation/*.sqn
+annotation/*.err
+annotation/*.fsa
+annotation/*.fna
+annotation/*.log
+
+# HMM compiled indexes (regenerate with `hmmpress`)
+tetr/*.h3f
+tetr/*.h3i
+tetr/*.h3m
+tetr/*.h3p
+tetr/*.hmm.gz
+
+# MEME EPS logos (keep .png + .txt + .html)
+tetr/meme_anr/*.eps
+
+# FIMO HTML/XML/CISML internals (keep tsv + gff)
+tetr/fimo_genome/cisml.xml
+tetr/fimo_genome/fimo.xml
+tetr/fimo_genome/fimo.html
+tetr/fimo_genome/best_site.narrowPeak
