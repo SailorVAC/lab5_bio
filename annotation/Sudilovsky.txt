@@ -1,0 +1,8 @@
+organism: Pectobacterium polaris NIBIO1392 
+contigs: 1
+bases: 5008416
+CDS: 4390
+misc_RNA: 163
+rRNA: 15
+tRNA: 77
+tmRNA: 1

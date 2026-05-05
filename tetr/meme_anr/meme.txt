@@ -1,0 +1,1186 @@
+********************************************************************************
+MEME - Motif discovery tool
+********************************************************************************
+MEME version 5.5.7 (Release date: Wed Jun 19 13:59:04 2024 -0700)
+
+For further information on how to interpret these results please access https://meme-suite.org/meme.
+To get a copy of the MEME Suite software please access https://meme-suite.org.
+
+********************************************************************************
+
+
+********************************************************************************
+REFERENCE
+********************************************************************************
+If you use this program in your research, please cite:
+
+Timothy L. Bailey and Charles Elkan,
+"Fitting a mixture model by expectation maximization to
+discover motifs in biopolymers",
+Proceedings of the Second International Conference on Intelligent Systems
+for Molecular Biology, pp. 28-36, AAAI Press, Menlo Park, California, 1994.
+********************************************************************************
+
+
+********************************************************************************
+TRAINING SET
+********************************************************************************
+PRIMARY SEQUENCES= tetr_upstream.fa
+CONTROL SEQUENCES= --none--
+ALPHABET= ACGT
+Sequence name            Weight Length  Sequence name            Weight Length  
+-------------            ------ ------  -------------            ------ ------  
+Sudilovsky_00125_self    1.0000    300  Sudilovsky_00124_div_Sud 1.0000    300  
+Sudilovsky_00417_self    1.0000    300  Sudilovsky_00418_div_Sud 1.0000    300  
+Sudilovsky_00510_self    1.0000    300  Sudilovsky_01139_self    1.0000    300  
+Sudilovsky_01625_self    1.0000    300  Sudilovsky_01626_div_Sud 1.0000    300  
+Sudilovsky_01704_self    1.0000    300  Sudilovsky_01705_div_Sud 1.0000    300  
+Sudilovsky_01794_self    1.0000    300  Sudilovsky_01795_div_Sud 1.0000    300  
+Sudilovsky_01851_self    1.0000    300  Sudilovsky_01854_self    1.0000    300  
+Sudilovsky_01855_div_Sud 1.0000    300  Sudilovsky_02231_self    1.0000    300  
+Sudilovsky_02232_div_Sud 1.0000    300  Sudilovsky_02242_self    1.0000    300  
+Sudilovsky_03254_self    1.0000    300  Sudilovsky_03255_div_Sud 1.0000    300  
+Sudilovsky_03460_self    1.0000    300  Sudilovsky_03461_div_Sud 1.0000    300  
+Sudilovsky_03677_self    1.0000    300  Sudilovsky_03912_self    1.0000    300  
+Sudilovsky_03913_div_Sud 1.0000    300  Sudilovsky_04489_self    1.0000    300  
+Sudilovsky_04490_div_Sud 1.0000    300  Sudilovsky_04495_self    1.0000    300  
+Sudilovsky_04496_div_Sud 1.0000    300  Sudilovsky_04549_self    1.0000    300  
+Sudilovsky_04550_div_Sud 1.0000    300  Sudilovsky_04599_self    1.0000    300  
+********************************************************************************
+
+********************************************************************************
+COMMAND LINE SUMMARY
+********************************************************************************
+This information can also be useful in the event you wish to report a
+problem with the MEME software.
+
+command: meme tetr_upstream.fa -dna -revcomp -mod anr -nmotifs 5 -minw 14 -maxw 24 -evt 1e-5 -oc meme_anr -p 4 
+
+model:  mod=           anr    nmotifs=      1000    evt=         1e-05
+objective function:           em=       E-value of product of p-values
+                              starts=   E-value of product of p-values
+strands: + -
+width:  minw=           14    maxw=           24
+nsites: minsites=        2    maxsites=      160    wnsites=       0.8
+theta:  spmap=         uni    spfuzz=        0.5
+em:     prior=   dirichlet    b=            0.01    maxiter=        50
+        distance=    1e-05
+trim:   wg=             11    ws=              1    endgaps=       yes
+data:   n=            9600    N=              32
+sample: seed=            0    hsfrac=          0
+        searchsize=   9600    norand=         no    csites=       1000
+Letter frequencies in dataset:
+A 0.268 C 0.232 G 0.232 T 0.268 
+Background letter frequencies (from file dataset with add-one prior applied):
+A 0.268 C 0.232 G 0.232 T 0.268 
+Background model order: 0
+********************************************************************************
+
+
+********************************************************************************
+MOTIF WTSATGATDAYSGTAWTSA MEME-1	width =  19  sites =  20  llr = 267  E-value = 1.8e-011
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif WTSATGATDAYSGTAWTSA MEME-1 Description
+--------------------------------------------------------------------------------
+Simplified        A  5:1a::9:48:::2952:8
+pos.-specific     C  ::5::3:::24611::26:
+probability       G  123::72241:382:::4:
+matrix            T  581:a::82:712616712
+
+         bits    2.1                    
+                 1.9    **              
+                 1.7    **              
+                 1.5    **         *    
+Relative         1.3  * *****      *   *
+Entropy          1.1  * ***** ** * *   *
+(19.3 bits)      0.8  * ***** **** ** **
+                 0.6 ** ***** **** *****
+                 0.4 ************* *****
+                 0.2 *******************
+                 0.0 -------------------
+
+Multilevel           ATCATGATAATCGTATTCA
+consensus            TGG  C GG CG A ACGT
+sequence                     T          
+                                        
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif WTSATGATDAYSGTAWTSA MEME-1 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name            Strand  Start   P-value                   Site      
+-------------            ------  ----- ---------            -------------------
+Sudilovsky_00418_div_Sud     +    157  1.89e-10 CAAGTATACA TTGATGATGATCGTAATCA AACCGTTTGA
+Sudilovsky_00417_self        -    189  1.89e-10 CAAGTATACA TTGATGATGATCGTAATCA AACCGTTTGA
+Sudilovsky_00418_div_Sud     -    192  4.19e-09 GCTAAACATA ATGATGATGATCGTAATCT AAAAAGTCAA
+Sudilovsky_00417_self        +    154  4.19e-09 GCTAAACATA ATGATGATGATCGTAATCT AAAAAGTCAA
+Sudilovsky_04490_div_Sud     -    237  1.27e-07 ATTATGGGTT TGCATGAGAATCGTATTTA ACAGAGTTAT
+Sudilovsky_04489_self        +    154  1.27e-07 ATTATGGGTT TGCATGAGAATCGTATTTA ACAGAGTTAT
+Sudilovsky_01855_div_Sud     -    252  2.11e-07 GCTGCCGCCG ATGATGATGACGTCATTCA TGGTGATGAG
+Sudilovsky_01854_self        +    199  2.11e-07 GCTGCCGCCG ATGATGATGACGTCATTCA TGGTGATGAG
+Sudilovsky_04599_self        +      6  2.57e-07      GCGCA TTCATGATGCTGGGAAACA GCGACAAAAA
+Sudilovsky_02232_div_Sud     +    214  3.40e-07 TTTCCTCCAC TTTATGATTATCGGAAACA ATTAGCAAGT
+Sudilovsky_02231_self        -    178  3.40e-07 TTTCCTCCAC TTTATGATTATCGGAAACA ATTAGCAAGT
+Sudilovsky_03461_div_Sud     +    194  8.59e-07 GCAATTCTAT ATCATCAGAACGCTATCCA ACAGATGAAA
+Sudilovsky_03460_self        -    186  8.59e-07 GCAATTCTAT ATCATCAGAACGCTATCCA ACAGATGAAA
+Sudilovsky_03255_div_Sud     -    265  1.08e-06 CAATAACGAT GGCATCGTAATCGAATTGA TGTTGTAGAG
+Sudilovsky_03254_self        +     19  1.08e-06 CAATAACGAT GGCATCGTAATCGAATTGA TGTTGTAGAG
+Sudilovsky_01705_div_Sud     -     50  1.34e-06 CACACCATTT TTCATGATAATTGATACGA ATTTTTAACC
+Sudilovsky_01704_self        +     81  1.34e-06 CACACCATTT TTCATGATAATTGATACGA ATTTTTAACC
+Sudilovsky_02232_div_Sud     +    258  2.02e-06 ACTATGTCTG ATAATCATTCCCGTATTGT ACTTGTCACC
+Sudilovsky_02231_self        -    134  2.02e-06 ACTATGTCTG ATAATCATTCCCGTATTGT ACTTGTCACC
+Sudilovsky_04599_self        +    248  2.30e-06 AAAAGGATGA ATCATGGTGGCGTTATTGA AAACCAAAGA
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif WTSATGATDAYSGTAWTSA MEME-1 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+Sudilovsky_00418_div_Sud          4.2e-09  156_[+1]_16_[-1]_90
+Sudilovsky_00417_self             1.9e-10  153_[+1]_16_[-1]_93
+Sudilovsky_04490_div_Sud          1.3e-07  236_[-1]_45
+Sudilovsky_04489_self             1.3e-07  153_[+1]_128
+Sudilovsky_01855_div_Sud          2.1e-07  251_[-1]_30
+Sudilovsky_01854_self             2.1e-07  198_[+1]_83
+Sudilovsky_04599_self             2.3e-06  5_[+1]_223_[+1]_34
+Sudilovsky_02232_div_Sud            2e-06  213_[+1]_25_[+1]_24
+Sudilovsky_02231_self               2e-06  133_[-1]_25_[-1]_104
+Sudilovsky_03461_div_Sud          8.6e-07  193_[+1]_88
+Sudilovsky_03460_self             8.6e-07  185_[-1]_96
+Sudilovsky_03255_div_Sud          1.1e-06  264_[-1]_17
+Sudilovsky_03254_self             1.1e-06  18_[+1]_263
+Sudilovsky_01705_div_Sud          1.3e-06  49_[-1]_232
+Sudilovsky_01704_self             1.3e-06  80_[+1]_201
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif WTSATGATDAYSGTAWTSA MEME-1 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF WTSATGATDAYSGTAWTSA width=19 seqs=20
+Sudilovsky_00418_div_Sud (  157) TTGATGATGATCGTAATCA  1 
+Sudilovsky_00417_self    (  189) TTGATGATGATCGTAATCA  1 
+Sudilovsky_00418_div_Sud (  192) ATGATGATGATCGTAATCT  1 
+Sudilovsky_00417_self    (  154) ATGATGATGATCGTAATCT  1 
+Sudilovsky_04490_div_Sud (  237) TGCATGAGAATCGTATTTA  1 
+Sudilovsky_04489_self    (  154) TGCATGAGAATCGTATTTA  1 
+Sudilovsky_01855_div_Sud (  252) ATGATGATGACGTCATTCA  1 
+Sudilovsky_01854_self    (  199) ATGATGATGACGTCATTCA  1 
+Sudilovsky_04599_self    (    6) TTCATGATGCTGGGAAACA  1 
+Sudilovsky_02232_div_Sud (  214) TTTATGATTATCGGAAACA  1 
+Sudilovsky_02231_self    (  178) TTTATGATTATCGGAAACA  1 
+Sudilovsky_03461_div_Sud (  194) ATCATCAGAACGCTATCCA  1 
+Sudilovsky_03460_self    (  186) ATCATCAGAACGCTATCCA  1 
+Sudilovsky_03255_div_Sud (  265) GGCATCGTAATCGAATTGA  1 
+Sudilovsky_03254_self    (   19) GGCATCGTAATCGAATTGA  1 
+Sudilovsky_01705_div_Sud (   50) TTCATGATAATTGATACGA  1 
+Sudilovsky_01704_self    (   81) TTCATGATAATTGATACGA  1 
+Sudilovsky_02232_div_Sud (  258) ATAATCATTCCCGTATTGT  1 
+Sudilovsky_02231_self    (  134) ATAATCATTCCCGTATTGT  1 
+Sudilovsky_04599_self    (  248) ATCATGGTGGCGTTATTGA  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif WTSATGATDAYSGTAWTSA MEME-1 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 19 n= 9024 bayes= 9.06647 E= 1.8e-011 
+    75  -1097   -121     75 
+ -1097  -1097    -21    158 
+  -142    111     37   -142 
+   190  -1097  -1097  -1097 
+ -1097  -1097  -1097    190 
+ -1097     37    159  -1097 
+   166  -1097    -63  -1097 
+ -1097  -1097    -21    158 
+    58  -1097     79    -42 
+   158    -63   -221  -1097 
+ -1097     59  -1097    128 
+ -1097    137     37   -142 
+ -1097   -121    169    -84 
+   -42   -121    -63    104 
+   175  -1097  -1097   -142 
+    75  -1097  -1097    104 
+   -84    -21  -1097    128 
+ -1097    125     59   -142 
+   158  -1097  -1097    -42 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif WTSATGATDAYSGTAWTSA MEME-1 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 19 nsites= 20 E= 1.8e-011 
+ 0.450000  0.000000  0.100000  0.450000 
+ 0.000000  0.000000  0.200000  0.800000 
+ 0.100000  0.500000  0.300000  0.100000 
+ 1.000000  0.000000  0.000000  0.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.000000  0.300000  0.700000  0.000000 
+ 0.850000  0.000000  0.150000  0.000000 
+ 0.000000  0.000000  0.200000  0.800000 
+ 0.400000  0.000000  0.400000  0.200000 
+ 0.800000  0.150000  0.050000  0.000000 
+ 0.000000  0.350000  0.000000  0.650000 
+ 0.000000  0.600000  0.300000  0.100000 
+ 0.000000  0.100000  0.750000  0.150000 
+ 0.200000  0.100000  0.150000  0.550000 
+ 0.900000  0.000000  0.000000  0.100000 
+ 0.450000  0.000000  0.000000  0.550000 
+ 0.150000  0.200000  0.000000  0.650000 
+ 0.000000  0.550000  0.350000  0.100000 
+ 0.800000  0.000000  0.000000  0.200000 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif WTSATGATDAYSGTAWTSA MEME-1 regular expression
+--------------------------------------------------------------------------------
+[AT][TG][CG]AT[GC]A[TG][AGT]A[TC][CG]G[TA]A[TA][TC][CG][AT]
+--------------------------------------------------------------------------------
+
+
+
+
+Time  2.05 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+MOTIF AKTYATWHTTGANCVHTTGMTCA MEME-2	width =  23  sites =  14  llr = 233  E-value = 7.0e-012
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif AKTYATWHTTGANCVHTTGMTCA MEME-2 Description
+--------------------------------------------------------------------------------
+Simplified        A  811:8162:::62:42:114:39
+pos.-specific     C  2::5:::3::122834:1:6:7:
+probability       G  :6::1:11::9:3131:29:::1
+matrix            T  :3951934aa:131:2a6::a::
+
+         bits    2.1                        
+                 1.9         **      *   *  
+                 1.7         **      *   *  
+                 1.5         ***     * * *  
+Relative         1.3 * *  *  ***     * * ***
+Entropy          1.1 * ****  ***  *  * *****
+(24.0 bits)      0.8 * ****  ***  *  * *****
+                 0.6 ******* **** *  * *****
+                 0.4 ******* **** ** *******
+                 0.2 ******* **** **********
+                 0.0 -----------------------
+
+Multilevel           AGTCATATTTGAGCACTTGCTCA
+consensus            CT T  TC   CT CA G A A 
+sequence                    A    A GT       
+                                 C          
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif AKTYATWHTTGANCVHTTGMTCA MEME-2 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name            Strand  Start   P-value                     Site        
+-------------            ------  ----- ---------            -----------------------
+Sudilovsky_04490_div_Sud     -    210  1.46e-11 TATTTAACAG AGTTATACTTGAGCGGTTGCTCA AGAGAAAAAA
+Sudilovsky_04489_self        +    177  1.46e-11 TATTTAACAG AGTTATACTTGAGCGGTTGCTCA AGAGAAAAAA
+Sudilovsky_04490_div_Sud     -    179  1.74e-11 CAAGAGAAAA AATTATATTTGAGCACTTGCTCA AAGTCAACGC
+Sudilovsky_04489_self        +    208  1.74e-11 CAAGAGAAAA AATTATATTTGAGCACTTGCTCA AAGTCAACGC
+Sudilovsky_01795_div_Sud     +    159  5.78e-09 TCATATGTTT AGTCATTTTTGAAGCTTAGCTCA CCGAGCCCTG
+Sudilovsky_01794_self        -    234  5.78e-09 TCATATGTTT AGTCATTTTTGAAGCTTAGCTCA CCGAGCCCTG
+Sudilovsky_02232_div_Sud     -    234  2.19e-08 AATGATTATC AGACATAGTTCCTCACTTGCTAA TTGTTTCCGA
+Sudilovsky_02231_self        +    154  2.19e-08 AATGATTATC AGACATAGTTCCTCACTTGCTAA TTGTTTCCGA
+Sudilovsky_00124_div_Sud     -    208  3.76e-08 CAAGTGTCCG ATTTGAAATTGACCAATGGATCA CAAGCTCAAA
+Sudilovsky_00125_self        +    166  3.76e-08 CAAGTGTCCG ATTTGAAATTGACCAATGGATCA CAAGCTCAAA
+Sudilovsky_00418_div_Sud     -    234  5.00e-08 ATTGTCGGTT CGTCATGCTTGTTCCCTTGATAG TGATTGGTGA
+Sudilovsky_00417_self        +    108  5.00e-08 ATTGTCGGTT CGTCATGCTTGTTCCCTTGATAG TGATTGGTGA
+Sudilovsky_01704_self        +    131  3.31e-07 AAAGATATTC ATTTTTTATTGAACGTTCAATCA AAAAAAAGTT
+Sudilovsky_01704_self        -    204  3.76e-07 ACTTTCTTCC CTTCATTTTTGCCTGATGAATCA CGGTAAACGG
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif AKTYATWHTTGANCVHTTGMTCA MEME-2 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+Sudilovsky_04490_div_Sud          1.5e-11  178_[-2]_8_[-2]_68
+Sudilovsky_04489_self             1.7e-11  176_[+2]_8_[+2]_70
+Sudilovsky_01795_div_Sud          5.8e-09  158_[+2]_119
+Sudilovsky_01794_self             5.8e-09  233_[-2]_44
+Sudilovsky_02232_div_Sud          2.2e-08  233_[-2]_44
+Sudilovsky_02231_self             2.2e-08  153_[+2]_124
+Sudilovsky_00124_div_Sud          3.8e-08  207_[-2]_70
+Sudilovsky_00125_self             3.8e-08  165_[+2]_112
+Sudilovsky_00418_div_Sud            5e-08  233_[-2]_44
+Sudilovsky_00417_self               5e-08  107_[+2]_170
+Sudilovsky_01704_self             3.3e-07  130_[+2]_50_[-2]_74
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif AKTYATWHTTGANCVHTTGMTCA MEME-2 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF AKTYATWHTTGANCVHTTGMTCA width=23 seqs=14
+Sudilovsky_04490_div_Sud (  210) AGTTATACTTGAGCGGTTGCTCA  1 
+Sudilovsky_04489_self    (  177) AGTTATACTTGAGCGGTTGCTCA  1 
+Sudilovsky_04490_div_Sud (  179) AATTATATTTGAGCACTTGCTCA  1 
+Sudilovsky_04489_self    (  208) AATTATATTTGAGCACTTGCTCA  1 
+Sudilovsky_01795_div_Sud (  159) AGTCATTTTTGAAGCTTAGCTCA  1 
+Sudilovsky_01794_self    (  234) AGTCATTTTTGAAGCTTAGCTCA  1 
+Sudilovsky_02232_div_Sud (  234) AGACATAGTTCCTCACTTGCTAA  1 
+Sudilovsky_02231_self    (  154) AGACATAGTTCCTCACTTGCTAA  1 
+Sudilovsky_00124_div_Sud (  208) ATTTGAAATTGACCAATGGATCA  1 
+Sudilovsky_00125_self    (  166) ATTTGAAATTGACCAATGGATCA  1 
+Sudilovsky_00418_div_Sud (  234) CGTCATGCTTGTTCCCTTGATAG  1 
+Sudilovsky_00417_self    (  108) CGTCATGCTTGTTCCCTTGATAG  1 
+Sudilovsky_01704_self    (  131) ATTTTTTATTGAACGTTCAATCA  1 
+Sudilovsky_01704_self    (  204) CTTCATTTTTGCCTGATGAATCA  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif AKTYATWHTTGANCVHTTGMTCA MEME-2 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 23 n= 8896 bayes= 9.91581 E= 7.0e-012 
+   155    -11  -1045  -1045 
+   -91  -1045    130      9 
+   -91  -1045  -1045    168 
+ -1045    111  -1045     90 
+   155  -1045    -70   -191 
+   -91  -1045  -1045    168 
+   109  -1045    -70      9 
+   -32     30    -70     41 
+ -1045  -1045  -1045    190 
+ -1045  -1045  -1045    190 
+ -1045    -70    189  -1045 
+   126    -11  -1045    -91 
+   -32    -11     30      9 
+ -1045    176    -70   -191 
+    68     30     30  -1045 
+   -32     89    -70    -32 
+ -1045  -1045  -1045    190 
+   -91   -170    -11    109 
+   -91  -1045    189  -1045 
+    68    130  -1045  -1045 
+ -1045  -1045  -1045    190 
+     9    162  -1045  -1045 
+   168  -1045    -70  -1045 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif AKTYATWHTTGANCVHTTGMTCA MEME-2 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 23 nsites= 14 E= 7.0e-012 
+ 0.785714  0.214286  0.000000  0.000000 
+ 0.142857  0.000000  0.571429  0.285714 
+ 0.142857  0.000000  0.000000  0.857143 
+ 0.000000  0.500000  0.000000  0.500000 
+ 0.785714  0.000000  0.142857  0.071429 
+ 0.142857  0.000000  0.000000  0.857143 
+ 0.571429  0.000000  0.142857  0.285714 
+ 0.214286  0.285714  0.142857  0.357143 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.000000  0.142857  0.857143  0.000000 
+ 0.642857  0.214286  0.000000  0.142857 
+ 0.214286  0.214286  0.285714  0.285714 
+ 0.000000  0.785714  0.142857  0.071429 
+ 0.428571  0.285714  0.285714  0.000000 
+ 0.214286  0.428571  0.142857  0.214286 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.142857  0.071429  0.214286  0.571429 
+ 0.142857  0.000000  0.857143  0.000000 
+ 0.428571  0.571429  0.000000  0.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.285714  0.714286  0.000000  0.000000 
+ 0.857143  0.000000  0.142857  0.000000 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif AKTYATWHTTGANCVHTTGMTCA MEME-2 regular expression
+--------------------------------------------------------------------------------
+[AC][GT]T[CT]AT[AT][TCA]TTG[AC][GTAC]C[ACG][CAT]T[TG]G[CA]T[CA]A
+--------------------------------------------------------------------------------
+
+
+
+
+Time  3.96 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+MOTIF BAMABYNTTWTWTACMAAAAKKAA MEME-3	width =  24  sites =  23  llr = 308  E-value = 3.4e-010
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif BAMABYNTTWTWTACMAAAAKKAA MEME-3 Description
+--------------------------------------------------------------------------------
+Simplified        A  :757::21:52419:669791:77
+pos.-specific     C  3:3:3431:21:::833121::1:
+probability       G  43:33:322:222:1:::::5332
+matrix            T  3:1:5626835471112:2:37:1
+
+         bits    2.1                         
+                 1.9                         
+                 1.7                         
+                 1.5              *   * *    
+Relative         1.3         *    **  * *    
+Entropy          1.1  * * *  *    **  * * *  
+(19.3 bits)      0.8  * * *  *   ***  * * ***
+                 0.6  *** *  *   ************
+                 0.4 ****** *** *************
+                 0.2 ****** *****************
+                 0.0 ------------------------
+
+Multilevel           GAAATTCTTATATACAAAAAGTAA
+consensus            TGCGCCG  TGTG  CC   TGG 
+sequence             C   G T  C              
+                                             
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif BAMABYNTTWTWTACMAAAAKKAA MEME-3 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name            Strand  Start   P-value                      Site        
+-------------            ------  ----- ---------            ------------------------
+Sudilovsky_04496_div_Sud     +    152  9.87e-11 TTATCCTGTT GACATTATTATGTACCAAAAGTAA CTTACCAATG
+Sudilovsky_04495_self        -    209  9.87e-11 TTATCCTGTT GACATTATTATGTACCAAAAGTAA CTTACCAATG
+Sudilovsky_04496_div_Sud     -    191  2.84e-08 CAGCGTCAGA TATAGTCTTATATACTAACAGTAA CTTACCATTG
+Sudilovsky_04495_self        +    170  2.84e-08 CAGCGTCAGA TATAGTCTTATATACTAACAGTAA CTTACCATTG
+Sudilovsky_04550_div_Sud     -    108  5.74e-08 ATCAGAAAGA CAAATCATTAAATACCCAAATGAG ACAAAAGTCT
+Sudilovsky_04549_self        +     82  5.74e-08 ATCAGAAAGA CAAATCATTAAATACCCAAATGAG ACAAAAGTCT
+Sudilovsky_03913_div_Sud     +    164  8.91e-08 AAATGAATTC TGCATCGTTCGTTACATAAATGGA TTGACGGTTA
+Sudilovsky_03912_self        -    232  8.91e-08 AAATGAATTC TGCATCGTTCGTTACATAAATGGA TTGACGGTTA
+Sudilovsky_03255_div_Sud     -    220  1.82e-07 CATGGTAGGT TAAACCTGTTTTTATACAAATTAA TAACGCGACT
+Sudilovsky_03254_self        +     59  1.82e-07 CATGGTAGGT TAAACCTGTTTTTATACAAATTAA TAACGCGACT
+Sudilovsky_04496_div_Sud     +    218  4.99e-07 GACTATATCT GACGCTGTTTTATAGCAATAGGGA GTACCCTGAA
+Sudilovsky_04495_self        -    143  4.99e-07 GACTATATCT GACGCTGTTTTATAGCAATAGGGA GTACCCTGAA
+Sudilovsky_01795_div_Sud     +    183  5.43e-07 CTTAGCTCAC CGAGCCCTGATTGACAACAAGTGA CCAATTGGTA
+Sudilovsky_01794_self        -    209  5.43e-07 CTTAGCTCAC CGAGCCCTGATTGACAACAAGTGA CCAATTGGTA
+Sudilovsky_01795_div_Sud     -    226  7.55e-07 GGATAACATA GGAATTCCTTGAGTCAAAAAGTAG TGACCATATT
+Sudilovsky_01794_self        +    166  7.55e-07 GGATAACATA GGAATTCCTTGAGTCAAAAAGTAG TGACCATATT
+Sudilovsky_00124_div_Sud     +    125  7.55e-07 GTATTTGAAG GAAAGTGAGATTTACATACATTCA AGTATGTATG
+Sudilovsky_00125_self        -    248  7.55e-07 GTATTTGAAG GAAAGTGAGATTTACATACATTCA AGTATGTATG
+Sudilovsky_01626_div_Sud     +    119  1.12e-06 GAACCATCGA CACATCCTTACATACACATCGTAT GATTATTTAC
+Sudilovsky_01625_self        -    224  1.12e-06 GAACCATCGA CACATCCTTACATACACATCGTAT GATTATTTAC
+Sudilovsky_01855_div_Sud     -    115  1.40e-06 TGTCAAGGAC TGTATTTATCGTGACCAAAAATAA CAACCAGACC
+Sudilovsky_01705_div_Sud     -    114  1.99e-06 TTCCGTTGAA GAAGGTTGTCAGAACAAAAAAGAA ATTATTCTTT
+Sudilovsky_01704_self        +     12  1.99e-06 TTCCGTTGAA GAAGGTTGTCAGAACAAAAAAGAA ATTATTCTTT
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif BAMABYNTTWTWTACMAAAAKKAA MEME-3 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+Sudilovsky_04496_div_Sud            5e-07  151_[+3]_15_[-3]_3_[+3]_59
+Sudilovsky_04495_self               5e-07  142_[-3]_3_[+3]_15_[-3]_68
+Sudilovsky_04550_div_Sud          5.7e-08  107_[-3]_169
+Sudilovsky_04549_self             5.7e-08  81_[+3]_195
+Sudilovsky_03913_div_Sud          8.9e-08  163_[+3]_113
+Sudilovsky_03912_self             8.9e-08  231_[-3]_45
+Sudilovsky_03255_div_Sud          1.8e-07  219_[-3]_57
+Sudilovsky_03254_self             1.8e-07  58_[+3]_218
+Sudilovsky_01795_div_Sud          7.6e-07  182_[+3]_19_[-3]_51
+Sudilovsky_01794_self             7.6e-07  165_[+3]_19_[-3]_68
+Sudilovsky_00124_div_Sud          7.6e-07  124_[+3]_152
+Sudilovsky_00125_self             7.6e-07  247_[-3]_29
+Sudilovsky_01626_div_Sud          1.1e-06  118_[+3]_158
+Sudilovsky_01625_self             1.1e-06  223_[-3]_53
+Sudilovsky_01855_div_Sud          1.4e-06  114_[-3]_162
+Sudilovsky_01705_div_Sud            2e-06  113_[-3]_163
+Sudilovsky_01704_self               2e-06  11_[+3]_265
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif BAMABYNTTWTWTACMAAAAKKAA MEME-3 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF BAMABYNTTWTWTACMAAAAKKAA width=24 seqs=23
+Sudilovsky_04496_div_Sud (  152) GACATTATTATGTACCAAAAGTAA  1 
+Sudilovsky_04495_self    (  209) GACATTATTATGTACCAAAAGTAA  1 
+Sudilovsky_04496_div_Sud (  191) TATAGTCTTATATACTAACAGTAA  1 
+Sudilovsky_04495_self    (  170) TATAGTCTTATATACTAACAGTAA  1 
+Sudilovsky_04550_div_Sud (  108) CAAATCATTAAATACCCAAATGAG  1 
+Sudilovsky_04549_self    (   82) CAAATCATTAAATACCCAAATGAG  1 
+Sudilovsky_03913_div_Sud (  164) TGCATCGTTCGTTACATAAATGGA  1 
+Sudilovsky_03912_self    (  232) TGCATCGTTCGTTACATAAATGGA  1 
+Sudilovsky_03255_div_Sud (  220) TAAACCTGTTTTTATACAAATTAA  1 
+Sudilovsky_03254_self    (   59) TAAACCTGTTTTTATACAAATTAA  1 
+Sudilovsky_04496_div_Sud (  218) GACGCTGTTTTATAGCAATAGGGA  1 
+Sudilovsky_04495_self    (  143) GACGCTGTTTTATAGCAATAGGGA  1 
+Sudilovsky_01795_div_Sud (  183) CGAGCCCTGATTGACAACAAGTGA  1 
+Sudilovsky_01794_self    (  209) CGAGCCCTGATTGACAACAAGTGA  1 
+Sudilovsky_01795_div_Sud (  226) GGAATTCCTTGAGTCAAAAAGTAG  1 
+Sudilovsky_01794_self    (  166) GGAATTCCTTGAGTCAAAAAGTAG  1 
+Sudilovsky_00124_div_Sud (  125) GAAAGTGAGATTTACATACATTCA  1 
+Sudilovsky_00125_self    (  248) GAAAGTGAGATTTACATACATTCA  1 
+Sudilovsky_01626_div_Sud (  119) CACATCCTTACATACACATCGTAT  1 
+Sudilovsky_01625_self    (  224) CACATCCTTACATACACATCGTAT  1 
+Sudilovsky_01855_div_Sud (  115) TGTATTTATCGTGACCAAAAATAA  1 
+Sudilovsky_01705_div_Sud (  114) GAAGGTTGTCAGAACAAAAAAGAA  1 
+Sudilovsky_01704_self    (   12) GAAGGTTGTCAGAACAAAAAAGAA  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif BAMABYNTTWTWTACMAAAAKKAA MEME-3 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 24 n= 8864 bayes= 8.19234 E= 3.4e-010 
+ -1117     17     91     18 
+   137  -1117     39  -1117 
+    96     59  -1117   -104 
+   146  -1117     17  -1117 
+ -1117     17     17     83 
+ -1117     91  -1117    107 
+   -62     59     17    -30 
+  -104   -141    -41    118 
+ -1117  -1117    -41    162 
+    96     -9  -1117     -4 
+   -62   -141     -9     96 
+    70  -1117    -41     54 
+  -162  -1117     -9    137 
+   177  -1117  -1117   -162 
+ -1117    183   -141   -162 
+   118     39  -1117   -162 
+   107     17  -1117    -62 
+   177   -141  -1117  -1117 
+   128    -41  -1117    -62 
+   177   -141  -1117  -1117 
+  -104  -1117    117     37 
+ -1117  -1117     59    128 
+   128   -141     17  -1117 
+   146  -1117    -41   -162 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif BAMABYNTTWTWTACMAAAAKKAA MEME-3 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 24 nsites= 23 E= 3.4e-010 
+ 0.000000  0.260870  0.434783  0.304348 
+ 0.695652  0.000000  0.304348  0.000000 
+ 0.521739  0.347826  0.000000  0.130435 
+ 0.739130  0.000000  0.260870  0.000000 
+ 0.000000  0.260870  0.260870  0.478261 
+ 0.000000  0.434783  0.000000  0.565217 
+ 0.173913  0.347826  0.260870  0.217391 
+ 0.130435  0.086957  0.173913  0.608696 
+ 0.000000  0.000000  0.173913  0.826087 
+ 0.521739  0.217391  0.000000  0.260870 
+ 0.173913  0.086957  0.217391  0.521739 
+ 0.434783  0.000000  0.173913  0.391304 
+ 0.086957  0.000000  0.217391  0.695652 
+ 0.913043  0.000000  0.000000  0.086957 
+ 0.000000  0.826087  0.086957  0.086957 
+ 0.608696  0.304348  0.000000  0.086957 
+ 0.565217  0.260870  0.000000  0.173913 
+ 0.913043  0.086957  0.000000  0.000000 
+ 0.652174  0.173913  0.000000  0.173913 
+ 0.913043  0.086957  0.000000  0.000000 
+ 0.130435  0.000000  0.521739  0.347826 
+ 0.000000  0.000000  0.347826  0.652174 
+ 0.652174  0.086957  0.260870  0.000000 
+ 0.739130  0.000000  0.173913  0.086957 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif BAMABYNTTWTWTACMAAAAKKAA MEME-3 regular expression
+--------------------------------------------------------------------------------
+[GTC][AG][AC][AG][TCG][TC][CGT]TT[ATC][TG][AT][TG]AC[AC][AC]AAA[GT][TG][AG]A
+--------------------------------------------------------------------------------
+
+
+
+
+Time  5.82 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+MOTIF CCGCVAGDYSCGHCAGCSHCMASC MEME-4	width =  24  sites =  23  llr = 303  E-value = 1.6e-008
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif CCGCVAGDYSCGHCAGCSHCMASC MEME-4 Description
+--------------------------------------------------------------------------------
+Simplified        A  2:3:37:3::1:3:7:::4256:2
+pos.-specific     C  77:842:1347248::74473:35
+probability       G  1:7:3:832627::3916::1361
+matrix            T  :3:1:1135::132:12:211112
+
+         bits    2.1                         
+                 1.9                         
+                 1.7                         
+                 1.5                *        
+Relative         1.3    *  *      * *        
+Entropy          1.1  ***  *  *   *** * *    
+(19.0 bits)      0.8 ****  *  **  *** * *  * 
+                 0.6 **** **  *** ***** *  * 
+                 0.4 ******* **** ******* ** 
+                 0.2 ************************
+                 0.0 ------------------------
+
+Multilevel           CCGCCAGATGCGCCAGCGACAAGC
+consensus            ATA AC GCCG A G  CC CGC 
+sequence                 G  TG   T     T     
+                                             
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif CCGCVAGDYSCGHCAGCSHCMASC MEME-4 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name            Strand  Start   P-value                      Site        
+-------------            ------  ----- ---------            ------------------------
+Sudilovsky_03913_div_Sud     -    277  3.77e-11          . CCGCGAGATGCGCCAGTCACCAGC GCTTTTTTAC
+Sudilovsky_03912_self        +    119  3.77e-11 TGCACCAATG CCGCGAGATGCGCCAGTCACCAGC GCTTTTTTAC
+Sudilovsky_01855_div_Sud     +    192  2.53e-08 TTTCGTAAAT ATACAAGGTGCGCCAGGCCCAGCC CATCGCCCTC
+Sudilovsky_01854_self        -    254  2.53e-08 TTTCGTAAAT ATACAAGGTGCGCCAGGCCCAGCC CATCGCCCTC
+Sudilovsky_04496_div_Sud     +     10  4.40e-08  CAGCCCGTT CCGCCAGATGCCCGAGCGTCAGCG CTTCCGTACC
+Sudilovsky_02232_div_Sud     -    277  1.01e-07          . ATGCCAGTCGCCCCGGTGACAAGT ACAATACGGG
+Sudilovsky_02231_self        +    110  1.01e-07 CGTTCCCTGC ATGCCAGTCGCCCCGGTGACAAGT ACAATACGGG
+Sudilovsky_03913_div_Sud     -    243  1.24e-07 GCTTTTTTAC CTGCAAGTTCGGTCATCGCCTACC CTATTTTGTA
+Sudilovsky_03912_self        +    153  1.24e-07 GCTTTTTTAC CTGCAAGTTCGGTCATCGCCTACC CTATTTTGTA
+Sudilovsky_01625_self        +     46  1.82e-07 GGAATCCGTG CCAACAGGCCAGCCAGCGCAAAGC CCTTGGTGCC
+Sudilovsky_01626_div_Sud     -    198  2.01e-07 CCACTTGCCA CCGCATGGTGGTACAGCGACAATA CATACAGAGC
+Sudilovsky_01625_self        +    145  2.01e-07 CCACTTGCCA CCGCATGGTGGTACAGCGACAATA CATACAGAGC
+Sudilovsky_00124_div_Sud     -    261  2.21e-07 ATCAGAACTG CCGCCAGAGGCGTTAGCCCTCTGT TTTTGTTCAT
+Sudilovsky_00125_self        +    112  2.21e-07 ATCAGAACTG CCGCCAGAGGCGTTAGCCCTCTGT TTTTGTTCAT
+Sudilovsky_02232_div_Sud     +     53  3.49e-07 CCCTACTCCT GCACGCTCTGCGACAGCCTCAAGC GGGGTATTTA
+Sudilovsky_04549_self        +    205  8.28e-07 GGCGACAACG CCGTGCTGCCCGATAGCGTCCGGC CCGAAAATTC
+Sudilovsky_03461_div_Sud     +     32  1.34e-06 GCCTTTTGTC ACGCCCGCCGCTTTAGCGACCGCA TCAATCGTCA
+Sudilovsky_04599_self        -    202  1.98e-06 CTCACGCTCG CCGTCAGATGCACCGACGTCATGC GTTGTTATGT
+Sudilovsky_01795_div_Sud     -    114  1.98e-06 TACACATCCC CCACGCGGGCCGTCGGACCATAGC GTTCGAGATC
+Sudilovsky_02231_self        -     27  2.66e-06 CGCGCTCTTA CCACAAATGCAGACAGCGAAAAGG CTCAGGCGCT
+Sudilovsky_01855_div_Sud     -     91  4.69e-06 CCAAAAATAA CAACCAGACCCGGCGGGGCCGGCC CGTCAACGAG
+Sudilovsky_01854_self        +     85  5.75e-06 GCCGAGCACA CCGTGCGAGCGGCCAGCGAAGCGG TTGCGCGGCC
+Sudilovsky_04599_self        +    171  6.57e-06 GGGAACGACA GCGCATTTCCCCACGGCCTCAACA TAACAACGCA
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif CCGCVAGDYSCGHCAGCSHCMASC MEME-4 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+Sudilovsky_03913_div_Sud          1.2e-07  242_[-4]_10_[-4]
+Sudilovsky_03912_self             1.2e-07  118_[+4]_10_[+4]_124
+Sudilovsky_01855_div_Sud          4.7e-06  90_[-4]_77_[+4]_85
+Sudilovsky_01854_self             5.8e-06  84_[+4]_145_[-4]_23
+Sudilovsky_04496_div_Sud          4.4e-08  9_[+4]_267
+Sudilovsky_02232_div_Sud          3.5e-07  52_[+4]_200_[-4]
+Sudilovsky_02231_self             2.7e-06  26_[-4]_59_[+4]_167
+Sudilovsky_01625_self             1.8e-07  45_[+4]_75_[+4]_132
+Sudilovsky_01626_div_Sud            2e-07  197_[-4]_79
+Sudilovsky_00124_div_Sud          2.2e-07  260_[-4]_16
+Sudilovsky_00125_self             2.2e-07  111_[+4]_165
+Sudilovsky_04549_self             8.3e-07  204_[+4]_72
+Sudilovsky_03461_div_Sud          1.3e-06  31_[+4]_245
+Sudilovsky_04599_self             6.6e-06  170_[+4]_7_[-4]_75
+Sudilovsky_01795_div_Sud            2e-06  113_[-4]_163
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif CCGCVAGDYSCGHCAGCSHCMASC MEME-4 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF CCGCVAGDYSCGHCAGCSHCMASC width=24 seqs=23
+Sudilovsky_03913_div_Sud (  277) CCGCGAGATGCGCCAGTCACCAGC  1 
+Sudilovsky_03912_self    (  119) CCGCGAGATGCGCCAGTCACCAGC  1 
+Sudilovsky_01855_div_Sud (  192) ATACAAGGTGCGCCAGGCCCAGCC  1 
+Sudilovsky_01854_self    (  254) ATACAAGGTGCGCCAGGCCCAGCC  1 
+Sudilovsky_04496_div_Sud (   10) CCGCCAGATGCCCGAGCGTCAGCG  1 
+Sudilovsky_02232_div_Sud (  277) ATGCCAGTCGCCCCGGTGACAAGT  1 
+Sudilovsky_02231_self    (  110) ATGCCAGTCGCCCCGGTGACAAGT  1 
+Sudilovsky_03913_div_Sud (  243) CTGCAAGTTCGGTCATCGCCTACC  1 
+Sudilovsky_03912_self    (  153) CTGCAAGTTCGGTCATCGCCTACC  1 
+Sudilovsky_01625_self    (   46) CCAACAGGCCAGCCAGCGCAAAGC  1 
+Sudilovsky_01626_div_Sud (  198) CCGCATGGTGGTACAGCGACAATA  1 
+Sudilovsky_01625_self    (  145) CCGCATGGTGGTACAGCGACAATA  1 
+Sudilovsky_00124_div_Sud (  261) CCGCCAGAGGCGTTAGCCCTCTGT  1 
+Sudilovsky_00125_self    (  112) CCGCCAGAGGCGTTAGCCCTCTGT  1 
+Sudilovsky_02232_div_Sud (   53) GCACGCTCTGCGACAGCCTCAAGC  1 
+Sudilovsky_04549_self    (  205) CCGTGCTGCCCGATAGCGTCCGGC  1 
+Sudilovsky_03461_div_Sud (   32) ACGCCCGCCGCTTTAGCGACCGCA  1 
+Sudilovsky_04599_self    (  202) CCGTCAGATGCACCGACGTCATGC  1 
+Sudilovsky_01795_div_Sud (  114) CCACGCGGGCCGTCGGACCATAGC  1 
+Sudilovsky_02231_self    (   27) CCACAAATGCAGACAGCGAAAAGG  1 
+Sudilovsky_01855_div_Sud (   91) CAACCAGACCCGGCGGGGCCGGCC  1 
+Sudilovsky_01854_self    (   85) CCGTGCGAGCGGCCAGCGAAGCGG  1 
+Sudilovsky_04599_self    (  171) GCGCATTTCCCCACGGCCTCAACA  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif CCGCVAGDYSCGHCAGCSHCMASC MEME-4 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 24 n= 8864 bayes= 8.98989 E= 1.6e-008 
+   -30    159   -141  -1117 
+  -262    159  -1117     -4 
+    18  -1117    159  -1117 
+  -262    183  -1117   -104 
+    37     76     17  -1117 
+   128     -9  -1117   -104 
+  -262  -1117    183   -104 
+    37   -141     39     -4 
+ -1117     39     -9     83 
+ -1117     76    139  -1117 
+  -162    159     -9  -1117 
+  -262    -41    149   -104 
+    -4     91   -241     -4 
+ -1117    176   -241    -62 
+   146  -1117     17  -1117 
+  -262  -1117    191   -162 
+  -262    149    -83    -62 
+ -1117     76    139  -1117 
+    54     76  -1117    -30 
+   -62    167  -1117   -162 
+    96     17   -141   -104 
+   107   -241     17   -104 
+ -1117     59    129   -162 
+   -62    117    -83    -62 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif CCGCVAGDYSCGHCAGCSHCMASC MEME-4 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 24 nsites= 23 E= 1.6e-008 
+ 0.217391  0.695652  0.086957  0.000000 
+ 0.043478  0.695652  0.000000  0.260870 
+ 0.304348  0.000000  0.695652  0.000000 
+ 0.043478  0.826087  0.000000  0.130435 
+ 0.347826  0.391304  0.260870  0.000000 
+ 0.652174  0.217391  0.000000  0.130435 
+ 0.043478  0.000000  0.826087  0.130435 
+ 0.347826  0.086957  0.304348  0.260870 
+ 0.000000  0.304348  0.217391  0.478261 
+ 0.000000  0.391304  0.608696  0.000000 
+ 0.086957  0.695652  0.217391  0.000000 
+ 0.043478  0.173913  0.652174  0.130435 
+ 0.260870  0.434783  0.043478  0.260870 
+ 0.000000  0.782609  0.043478  0.173913 
+ 0.739130  0.000000  0.260870  0.000000 
+ 0.043478  0.000000  0.869565  0.086957 
+ 0.043478  0.652174  0.130435  0.173913 
+ 0.000000  0.391304  0.608696  0.000000 
+ 0.391304  0.391304  0.000000  0.217391 
+ 0.173913  0.739130  0.000000  0.086957 
+ 0.521739  0.260870  0.086957  0.130435 
+ 0.565217  0.043478  0.260870  0.130435 
+ 0.000000  0.347826  0.565217  0.086957 
+ 0.173913  0.521739  0.130435  0.173913 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif CCGCVAGDYSCGHCAGCSHCMASC MEME-4 regular expression
+--------------------------------------------------------------------------------
+[CA][CT][GA]C[CAG][AC]G[AGT][TCG][GC][CG]G[CAT]C[AG]GC[GC][ACT]C[AC][AG][GC]C
+--------------------------------------------------------------------------------
+
+
+
+
+Time  7.58 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+MOTIF YWKYSYSTTTKTCDKYCMTTTCA MEME-5	width =  23  sites =  14  llr = 222  E-value = 5.7e-006
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif YWKYSYSTTTKTCDKYCMTTTCA MEME-5 Description
+--------------------------------------------------------------------------------
+Simplified        A  15:::2:11::::4:::6::::9
+pos.-specific     C  6::6355::31:9::663:::9:
+probability       G  ::615:411:3::34:2:3111:
+matrix            T  45432317776a146411799:1
+
+         bits    2.1                        
+                 1.9            *           
+                 1.7            *         * 
+                 1.5            **      * **
+Relative         1.3            **      ****
+Entropy          1.1   *      * ** **  *****
+(22.9 bits)      0.8 ***    *** ** *** *****
+                 0.6 ***** ******* *********
+                 0.4 ***********************
+                 0.2 ***********************
+                 0.0 -----------------------
+
+Multilevel           CAGCGCCTTTTTCATCCATTTCA
+consensus            TTTTCTG  CG  TGTGCG    
+sequence                 TA       G         
+                                            
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif YWKYSYSTTTKTCDKYCMTTTCA MEME-5 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name            Strand  Start   P-value                     Site        
+-------------            ------  ----- ---------            -----------------------
+Sudilovsky_03912_self        +     75  2.30e-12 ATCGCCACAT CTGCGCCTTTTTCTGCCAGTTCA AGCGCAATCG
+Sudilovsky_01626_div_Sud     +     73  1.18e-09 GCCAGCAGCG TAGCGCGGGTTTCTTCCATTTCA GCACGGGTAC
+Sudilovsky_01625_self        -    271  1.18e-09    AGCAGCG TAGCGCGGGTTTCTTCCATTTCA GCACGGGTAC
+Sudilovsky_04490_div_Sud     +    135  1.30e-08 TTTTGTCTTT TAGCGCTTTCGTCGTCTCTTTCA TTACCGTCCC
+Sudilovsky_04489_self        -    252  1.30e-08 TTTTGTCTTT TAGCGCTTTCGTCGTCTCTTTCA TTACCGTCCC
+Sudilovsky_04549_self        -    256  2.51e-08 GCCCGTGTCG ATGTCAGTTTTTCATCCCGTTCA ATCACATAGA
+Sudilovsky_04599_self        -    277  2.74e-08          T CTGCCTCTTTTTCTTTGCTTTGA TCTTTGGTTT
+Sudilovsky_02232_div_Sud     -    174  4.56e-08 AAATTCTCCA CTTTGTCAATGTCAGTCATTTCA TTCAGGGGGC
+Sudilovsky_02231_self        +    214  4.56e-08 AAATTCTCCA CTTTGTCAATGTCAGTCATTTCA TTCAGGGGGC
+Sudilovsky_04496_div_Sud     +    263  4.94e-08 GCATGCATTA CTTGTCGTTTCTCATCCTGTTCA TACCTCACTC
+Sudilovsky_04495_self        -     99  4.94e-08 GCATGCATTA CTTGTCGTTTCTCATCCTGTTCA TACCTCACTC
+Sudilovsky_03461_div_Sud     -    252  1.29e-07 TGGCCAGGGT CAGCCACTTCTTTGGTGATTGCA TAGCAGGATC
+Sudilovsky_03460_self        +    124  1.29e-07 TGGCCAGGGT CAGCCACTTCTTTGGTGATTGCA TAGCAGGATC
+Sudilovsky_03677_self        -    247  2.42e-07 TTCCTTTTCG TATTTTCTTTTTCTGCCATGTCT GAAAAGACCC
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif YWKYSYSTTTKTCDKYCMTTTCA MEME-5 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+Sudilovsky_03912_self             2.3e-12  74_[+5]_203
+Sudilovsky_01626_div_Sud          1.2e-09  72_[+5]_205
+Sudilovsky_01625_self             1.2e-09  270_[-5]_7
+Sudilovsky_04490_div_Sud          1.3e-08  134_[+5]_143
+Sudilovsky_04489_self             1.3e-08  251_[-5]_26
+Sudilovsky_04549_self             2.5e-08  255_[-5]_22
+Sudilovsky_04599_self             2.7e-08  276_[-5]_1
+Sudilovsky_02232_div_Sud          4.6e-08  173_[-5]_104
+Sudilovsky_02231_self             4.6e-08  213_[+5]_64
+Sudilovsky_04496_div_Sud          4.9e-08  262_[+5]_15
+Sudilovsky_04495_self             4.9e-08  98_[-5]_179
+Sudilovsky_03461_div_Sud          1.3e-07  251_[-5]_26
+Sudilovsky_03460_self             1.3e-07  123_[+5]_154
+Sudilovsky_03677_self             2.4e-07  246_[-5]_31
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif YWKYSYSTTTKTCDKYCMTTTCA MEME-5 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF YWKYSYSTTTKTCDKYCMTTTCA width=23 seqs=14
+Sudilovsky_03912_self    (   75) CTGCGCCTTTTTCTGCCAGTTCA  1 
+Sudilovsky_01626_div_Sud (   73) TAGCGCGGGTTTCTTCCATTTCA  1 
+Sudilovsky_01625_self    (  271) TAGCGCGGGTTTCTTCCATTTCA  1 
+Sudilovsky_04490_div_Sud (  135) TAGCGCTTTCGTCGTCTCTTTCA  1 
+Sudilovsky_04489_self    (  252) TAGCGCTTTCGTCGTCTCTTTCA  1 
+Sudilovsky_04549_self    (  256) ATGTCAGTTTTTCATCCCGTTCA  1 
+Sudilovsky_04599_self    (  277) CTGCCTCTTTTTCTTTGCTTTGA  1 
+Sudilovsky_02232_div_Sud (  174) CTTTGTCAATGTCAGTCATTTCA  1 
+Sudilovsky_02231_self    (  214) CTTTGTCAATGTCAGTCATTTCA  1 
+Sudilovsky_04496_div_Sud (  263) CTTGTCGTTTCTCATCCTGTTCA  1 
+Sudilovsky_04495_self    (   99) CTTGTCGTTTCTCATCCTGTTCA  1 
+Sudilovsky_03461_div_Sud (  252) CAGCCACTTCTTTGGTGATTGCA  1 
+Sudilovsky_03460_self    (  124) CAGCCACTTCTTTGGTGATTGCA  1 
+Sudilovsky_03677_self    (  247) TATTTTCTTTTTCTGCCATGTCT  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif YWKYSYSTTTKTCDKYCMTTTCA MEME-5 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 23 n= 8896 bayes= 9.15293 E= 5.7e-006 
+  -191    130  -1045     41 
+    90  -1045  -1045     90 
+ -1045  -1045    147     41 
+ -1045    130    -70      9 
+ -1045     30    111    -32 
+   -32    111  -1045      9 
+ -1045    111     62    -91 
+   -91  -1045    -70    141 
+   -91  -1045    -70    141 
+ -1045     30  -1045    141 
+ -1045    -70     30    109 
+ -1045  -1045  -1045    190 
+ -1045    189  -1045    -91 
+    41  -1045     30     41 
+ -1045  -1045     89    109 
+ -1045    147  -1045     41 
+ -1045    147    -11    -91 
+   109     30  -1045    -91 
+ -1045  -1045     30    141 
+ -1045  -1045   -170    179 
+ -1045  -1045    -70    168 
+ -1045    200   -170  -1045 
+   179  -1045  -1045   -191 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif YWKYSYSTTTKTCDKYCMTTTCA MEME-5 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 23 nsites= 14 E= 5.7e-006 
+ 0.071429  0.571429  0.000000  0.357143 
+ 0.500000  0.000000  0.000000  0.500000 
+ 0.000000  0.000000  0.642857  0.357143 
+ 0.000000  0.571429  0.142857  0.285714 
+ 0.000000  0.285714  0.500000  0.214286 
+ 0.214286  0.500000  0.000000  0.285714 
+ 0.000000  0.500000  0.357143  0.142857 
+ 0.142857  0.000000  0.142857  0.714286 
+ 0.142857  0.000000  0.142857  0.714286 
+ 0.000000  0.285714  0.000000  0.714286 
+ 0.000000  0.142857  0.285714  0.571429 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.000000  0.857143  0.000000  0.142857 
+ 0.357143  0.000000  0.285714  0.357143 
+ 0.000000  0.000000  0.428571  0.571429 
+ 0.000000  0.642857  0.000000  0.357143 
+ 0.000000  0.642857  0.214286  0.142857 
+ 0.571429  0.285714  0.000000  0.142857 
+ 0.000000  0.000000  0.285714  0.714286 
+ 0.000000  0.000000  0.071429  0.928571 
+ 0.000000  0.000000  0.142857  0.857143 
+ 0.000000  0.928571  0.071429  0.000000 
+ 0.928571  0.000000  0.000000  0.071429 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif YWKYSYSTTTKTCDKYCMTTTCA MEME-5 regular expression
+--------------------------------------------------------------------------------
+[CT][AT][GT][CT][GCT][CTA][CG]TT[TC][TG]TC[ATG][TG][CT][CG][AC][TG]TTCA
+--------------------------------------------------------------------------------
+
+
+
+
+Time  9.18 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+MOTIF ATMYVNTCTTATDNHYGYSCTCTG MEME-6	width =  24  sites =  10  llr = 190  E-value = 6.5e-007
+********************************************************************************
+--------------------------------------------------------------------------------
+	Motif ATMYVNTCTTATDNHYGYSCTCTG MEME-6 Description
+--------------------------------------------------------------------------------
+Simplified        A  6:6:42::::8:444:2::::2::
+pos.-specific     C  2:442226:2:::224:64a28::
+probability       G  2:::44:2::::22::8:6::::a
+matrix            T  :a:6:282a82a4246:4::8:a:
+
+         bits    2.1                    *   *
+                 1.9  *      *  *       *  **
+                 1.7  *      *  *       *  **
+                 1.5  *      *  *       *  **
+Relative         1.3  *    * ****    *  *****
+Entropy          1.1  ***  * ****   *********
+(27.4 bits)      0.8  ***  * ****   *********
+                 0.6 ****  ******   *********
+                 0.4 ***** ******* **********
+                 0.2 ***** ******* **********
+                 0.0 ------------------------
+
+Multilevel           ATATAGTCTTATAAATGCGCTCTG
+consensus            C CCGACG CT TCTCATC CA  
+sequence             G   CC T    GGC         
+                          T       T          
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ATMYVNTCTTATDNHYGYSCTCTG MEME-6 sites sorted by position p-value
+--------------------------------------------------------------------------------
+Sequence name            Strand  Start   P-value                      Site        
+-------------            ------  ----- ---------            ------------------------
+Sudilovsky_03913_div_Sud     -    200  1.15e-10 AGTGATTGAT ATATAATGTTATAAACGCCCTCTG GGTAACCGTC
+Sudilovsky_03912_self        +    196  1.15e-10 AGTGATTGAT ATATAATGTTATAAACGCCCTCTG GGTAACCGTC
+Sudilovsky_01626_div_Sud     +    170  6.83e-10 CCGTATGAAT ATATGCTTTTATTCATACGCTCTG TATGTATTGT
+Sudilovsky_01625_self        -    173  6.83e-10 CCGTATGAAT ATATGCTTTTATTCATACGCTCTG TATGTATTGT
+Sudilovsky_00124_div_Sud     -    162  1.51e-09 CCCATTGCTG CTATAGTCTTATGTTCGTGCTATG TTACATACAT
+Sudilovsky_00125_self        +    211  1.51e-09 CCCATTGCTG CTATAGTCTTATGTTCGTGCTATG TTACATACAT
+Sudilovsky_03255_div_Sud     +      8  1.81e-09    ACGACGA GTCCGTTCTTTTTGTTGTGCTCTG ACACCCATTA
+Sudilovsky_03254_self        -    271  1.81e-09     CGACGA GTCCGTTCTTTTTGTTGTGCTCTG ACACCCATTA
+Sudilovsky_02232_div_Sud     +    148  4.84e-09 GTAAGGCTGC ATCCCGCCTCATAACTGCCCCCTG AATGAAATGA
+Sudilovsky_02231_self        -    239  4.84e-09 GTAAGGCTGC ATCCCGCCTCATAACTGCCCCCTG AATGAAATGA
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ATMYVNTCTTATDNHYGYSCTCTG MEME-6 block diagrams
+--------------------------------------------------------------------------------
+SEQUENCE NAME            POSITION P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+Sudilovsky_03913_div_Sud          1.1e-10  199_[-6]_77
+Sudilovsky_03912_self             1.1e-10  195_[+6]_81
+Sudilovsky_01626_div_Sud          6.8e-10  169_[+6]_107
+Sudilovsky_01625_self             6.8e-10  172_[-6]_104
+Sudilovsky_00124_div_Sud          1.5e-09  161_[-6]_115
+Sudilovsky_00125_self             1.5e-09  210_[+6]_66
+Sudilovsky_03255_div_Sud          1.8e-09  7_[+6]_269
+Sudilovsky_03254_self             1.8e-09  270_[-6]_6
+Sudilovsky_02232_div_Sud          4.8e-09  147_[+6]_129
+Sudilovsky_02231_self             4.8e-09  238_[-6]_38
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ATMYVNTCTTATDNHYGYSCTCTG MEME-6 in BLOCKS format
+--------------------------------------------------------------------------------
+BL   MOTIF ATMYVNTCTTATDNHYGYSCTCTG width=24 seqs=10
+Sudilovsky_03913_div_Sud (  200) ATATAATGTTATAAACGCCCTCTG  1 
+Sudilovsky_03912_self    (  196) ATATAATGTTATAAACGCCCTCTG  1 
+Sudilovsky_01626_div_Sud (  170) ATATGCTTTTATTCATACGCTCTG  1 
+Sudilovsky_01625_self    (  173) ATATGCTTTTATTCATACGCTCTG  1 
+Sudilovsky_00124_div_Sud (  162) CTATAGTCTTATGTTCGTGCTATG  1 
+Sudilovsky_00125_self    (  211) CTATAGTCTTATGTTCGTGCTATG  1 
+Sudilovsky_03255_div_Sud (    8) GTCCGTTCTTTTTGTTGTGCTCTG  1 
+Sudilovsky_03254_self    (  271) GTCCGTTCTTTTTGTTGTGCTCTG  1 
+Sudilovsky_02232_div_Sud (  148) ATCCCGCCTCATAACTGCCCCCTG  1 
+Sudilovsky_02231_self    (  239) ATCCCGCCTCATAACTGCCCCCTG  1 
+//
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ATMYVNTCTTATDNHYGYSCTCTG MEME-6 position-specific scoring matrix
+--------------------------------------------------------------------------------
+log-odds matrix: alength= 4 w= 24 n= 8864 bayes= 9.22381 E= 6.5e-007 
+   116    -21    -21   -997 
+  -997   -997   -997    190 
+   116     79   -997   -997 
+  -997     79   -997    116 
+    58    -21     79   -997 
+   -42    -21     79    -42 
+  -997    -21   -997    158 
+  -997    137    -21    -42 
+  -997   -997   -997    190 
+  -997    -21   -997    158 
+   158   -997   -997    -42 
+  -997   -997   -997    190 
+    58   -997    -21     58 
+    58    -21    -21    -42 
+    58    -21   -997     58 
+  -997     79   -997    116 
+   -42   -997    179   -997 
+  -997    137   -997     58 
+  -997     79    137   -997 
+  -997    211   -997   -997 
+  -997    -21   -997    158 
+   -42    179   -997   -997 
+  -997   -997   -997    190 
+  -997   -997    211   -997 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ATMYVNTCTTATDNHYGYSCTCTG MEME-6 position-specific probability matrix
+--------------------------------------------------------------------------------
+letter-probability matrix: alength= 4 w= 24 nsites= 10 E= 6.5e-007 
+ 0.600000  0.200000  0.200000  0.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.600000  0.400000  0.000000  0.000000 
+ 0.000000  0.400000  0.000000  0.600000 
+ 0.400000  0.200000  0.400000  0.000000 
+ 0.200000  0.200000  0.400000  0.200000 
+ 0.000000  0.200000  0.000000  0.800000 
+ 0.000000  0.600000  0.200000  0.200000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.000000  0.200000  0.000000  0.800000 
+ 0.800000  0.000000  0.000000  0.200000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.400000  0.000000  0.200000  0.400000 
+ 0.400000  0.200000  0.200000  0.200000 
+ 0.400000  0.200000  0.000000  0.400000 
+ 0.000000  0.400000  0.000000  0.600000 
+ 0.200000  0.000000  0.800000  0.000000 
+ 0.000000  0.600000  0.000000  0.400000 
+ 0.000000  0.400000  0.600000  0.000000 
+ 0.000000  1.000000  0.000000  0.000000 
+ 0.000000  0.200000  0.000000  0.800000 
+ 0.200000  0.800000  0.000000  0.000000 
+ 0.000000  0.000000  0.000000  1.000000 
+ 0.000000  0.000000  1.000000  0.000000 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+	Motif ATMYVNTCTTATDNHYGYSCTCTG MEME-6 regular expression
+--------------------------------------------------------------------------------
+[ACG]T[AC][TC][AGC][GACT][TC][CGT]T[TC][AT]T[ATG][ACGT][ATC][TC][GA][CT][GC]C[TC][CA]TG
+--------------------------------------------------------------------------------
+
+
+
+
+Time 10.67 secs.
+
+********************************************************************************
+
+
+********************************************************************************
+SUMMARY OF MOTIFS
+********************************************************************************
+
+--------------------------------------------------------------------------------
+	Combined block diagrams: non-overlapping sites with p-value < 0.0001
+--------------------------------------------------------------------------------
+SEQUENCE NAME            COMBINED P-VALUE  MOTIF DIAGRAM
+-------------            ----------------  -------------
+Sudilovsky_00125_self            1.66e-14  111_[+4(2.21e-07)]_30_\
+    [+2(3.76e-08)]_22_[+6(1.51e-09)]_13_[-3(7.55e-07)]_29
+Sudilovsky_00124_div_Sud         1.04e-13  124_[+3(7.55e-07)]_13_\
+    [-6(1.51e-09)]_22_[-2(3.76e-08)]_30_[-4(2.21e-07)]_16
+Sudilovsky_00417_self            3.39e-08  107_[+2(5.00e-08)]_23_\
+    [+1(4.19e-09)]_16_[-1(1.89e-10)]_93
+Sudilovsky_00418_div_Sud         2.98e-09  156_[+1(1.89e-10)]_16_\
+    [-1(4.19e-09)]_23_[-2(5.00e-08)]_44
+Sudilovsky_00510_self            1.03e-01  115_[+5(5.99e-05)]_162
+Sudilovsky_01139_self            5.51e-01  300
+Sudilovsky_01625_self            9.76e-15  45_[+4(1.82e-07)]_75_[+4(2.01e-07)]_\
+    4_[-6(6.83e-10)]_27_[-3(1.12e-06)]_23_[-5(1.18e-09)]_7
+Sudilovsky_01626_div_Sud         1.50e-14  72_[+5(1.18e-09)]_23_[+3(1.12e-06)]_\
+    27_[+6(6.83e-10)]_4_[-4(2.01e-07)]_79
+Sudilovsky_01704_self            4.15e-06  11_[+3(1.99e-06)]_45_[+1(1.34e-06)]_\
+    31_[+2(3.31e-07)]_50_[-2(3.76e-07)]_74
+Sudilovsky_01705_div_Sud         6.06e-04  49_[-1(1.34e-06)]_45_[-3(1.99e-06)]_\
+    163
+Sudilovsky_01794_self            1.22e-06  165_[+3(7.55e-07)]_19_\
+    [-3(5.43e-07)]_1_[-2(5.78e-09)]_44
+Sudilovsky_01795_div_Sud         1.58e-08  113_[-4(1.98e-06)]_21_\
+    [+2(5.78e-09)]_1_[+3(5.43e-07)]_19_[-3(7.55e-07)]_51
+Sudilovsky_01851_self            4.09e-01  300
+Sudilovsky_01854_self            4.12e-05  84_[+4(5.75e-06)]_90_[+1(2.11e-07)]_\
+    36_[-4(2.53e-08)]_23
+Sudilovsky_01855_div_Sud         3.89e-09  2_[+5(2.57e-05)]_65_[-4(4.69e-06)]_\
+    [-3(1.40e-06)]_53_[+4(2.53e-08)]_36_[-1(2.11e-07)]_30
+Sudilovsky_02231_self            2.89e-17  26_[-4(2.66e-06)]_59_[+4(1.01e-07)]_\
+    [-1(2.02e-06)]_1_[+2(2.19e-08)]_1_[-1(3.40e-07)]_17_[+5(4.56e-08)]_2_\
+    [-6(4.84e-09)]_38
+Sudilovsky_02232_div_Sud         2.89e-17  52_[+4(3.49e-07)]_71_[+6(4.84e-09)]_\
+    2_[-5(4.56e-08)]_17_[+1(3.40e-07)]_1_[-2(2.19e-08)]_1_[+1(2.02e-06)]_\
+    [-4(1.01e-07)]
+Sudilovsky_02242_self            7.83e-01  300
+Sudilovsky_03254_self            5.17e-10  18_[+1(1.08e-06)]_21_[+3(1.82e-07)]_\
+    188_[-6(1.81e-09)]_6
+Sudilovsky_03255_div_Sud         5.17e-10  7_[+6(1.81e-09)]_188_[-3(1.82e-07)]_\
+    21_[-1(1.08e-06)]_17
+Sudilovsky_03460_self            5.66e-05  33_[+5(9.52e-05)]_67_[+5(1.29e-07)]_\
+    39_[-1(8.59e-07)]_96
+Sudilovsky_03461_div_Sud         3.38e-07  31_[+4(1.34e-06)]_138_\
+    [+1(8.59e-07)]_39_[-5(1.29e-07)]_26
+Sudilovsky_03677_self            5.67e-02  246_[-5(2.42e-07)]_31
+Sudilovsky_03912_self            5.24e-22  74_[+5(2.30e-12)]_21_[+4(3.77e-11)]_\
+    10_[+4(1.24e-07)]_19_[+6(1.15e-10)]_12_[-3(8.91e-08)]_45
+Sudilovsky_03913_div_Sud         9.78e-15  163_[+3(8.91e-08)]_12_\
+    [-6(1.15e-10)]_19_[-4(1.24e-07)]_10_[-4(3.77e-11)]
+Sudilovsky_04489_self            5.07e-13  153_[+1(1.27e-07)]_4_[+2(1.46e-11)]_\
+    8_[+2(1.74e-11)]_21_[-5(1.30e-08)]_26
+Sudilovsky_04490_div_Sud         1.06e-13  55_[+4(7.02e-05)]_55_[+5(1.30e-08)]_\
+    21_[-2(1.74e-11)]_8_[-2(1.46e-11)]_4_[-1(1.27e-07)]_45
+Sudilovsky_04495_self            2.59e-08  98_[-5(4.94e-08)]_21_[-3(4.99e-07)]_\
+    3_[+3(2.84e-08)]_15_[-3(9.87e-11)]_68
+Sudilovsky_04496_div_Sud         2.85e-12  9_[+4(4.40e-08)]_118_[+3(9.87e-11)]_\
+    15_[-3(2.84e-08)]_3_[+3(4.99e-07)]_21_[+5(4.94e-08)]_15
+Sudilovsky_04549_self            1.29e-08  81_[+3(5.74e-08)]_99_[+4(8.28e-07)]_\
+    27_[-5(2.51e-08)]_22
+Sudilovsky_04550_div_Sud         3.93e-03  107_[-3(5.74e-08)]_169
+Sudilovsky_04599_self            1.23e-10  5_[+1(2.57e-07)]_146_[+4(6.57e-06)]_\
+    7_[-4(1.98e-06)]_22_[+1(2.30e-06)]_10_[-5(2.74e-08)]_1
+--------------------------------------------------------------------------------
+
+********************************************************************************
+
+
+********************************************************************************
+Stopped because the next motif E-value > 1.00e-05.
+********************************************************************************
+
+CPU: devin-box
+
+********************************************************************************
