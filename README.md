@@ -8,6 +8,29 @@
 
 Полное описание работы см. в [`REPORT.md`](REPORT.md).
 
+## Быстрый старт (Ubuntu 22.04)
+
+```bash
+git clone https://github.com/SailorVAC/lab5_bio.git
+cd lab5_bio
+./setup.sh        # установит prokka + БД, MEME, HMMER, biopython и пр.
+source ~/.bashrc  # чтобы подцепить PATH к meme/fimo
+make all          # скачает геном, прогонит prokka, найдёт TetR-сайты
+```
+
+После `make all` финальный GenBank-файл лежит в
+`annotation/Sudilovsky_TetR.gbk`.
+
+Запустить шаги по отдельности:
+
+```bash
+make genome     # скачать FASTA и оригинальный NCBI GenBank
+make annotate   # Prokka-аннотация
+make tetr       # hmmscan PF00440 + MEME + FIMO
+make report     # пересборка финального GenBank с фичами protein_bind
+make clean      # удалить всё кроме data/
+```
+
 ## Структура
 
 ```
@@ -28,6 +51,8 @@ tetr/
   extract_upstream.py
   add_tetr_sites.py
 REPORT.md                        # отчёт по лабораторной
+setup.sh                         # установка всех зависимостей (Prokka, MEME, ...)
+Makefile                         # пайплайн воспроизведения
 ```
 
 ## Главное
