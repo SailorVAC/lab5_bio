@@ -4,7 +4,7 @@ subtitle: "Отчёт по лабораторной работе №5"
 author: "Студент: Судиловский Л."
 date: "2026"
 lang: ru-RU
-mainfont: "Times New Roman"
+mainfont: "DejaVu Serif"
 fontsize: 14pt
 geometry:
   - a4paper
@@ -29,6 +29,9 @@ header-includes:
   - \usepackage{caption}
   - \captionsetup[table]{name=Таблица,labelsep=endash,justification=raggedright,singlelinecheck=false}
   - \captionsetup[figure]{name=Рисунок,labelsep=endash,justification=centering}
+  - \newfontfamily\cyrillicfont{DejaVu Serif}
+  - \newfontfamily\cyrillicfontsf{DejaVu Sans}
+  - \newfontfamily\cyrillicfonttt{DejaVu Sans Mono}
 ---
 
 \thispagestyle{empty}
@@ -422,6 +425,8 @@ tmRNA: 1
 `hypothetical protein`. Это типичное распределение для бактериальных
 геномов уровня плотности UniProt SwissProt.
 
+![Сводная статистика аннотации Prokka и сравнение с RefSeq (файл `annotation/Sudilovsky.txt` и фрагмент `Sudilovsky.log`)](screenshots/04_prokka_stats.png){#fig:prokka width=95%}
+
 ### Образец GenBank-записи Prokka
 
 Каждая фича получает префикс `Sudilovsky_NNNNN`, например первый CDS:
@@ -569,6 +574,8 @@ Sudilovsky\_04599 & --   & 702 & --      & $2{,}2{\cdot}10^{-16}$ & hypothetical
 типичные для геномов *Pectobacterium*. Размеры всех белков (552–729 п.н.,
 ~ 184–243 а.к.) согласуются с типичной длиной TetR-семейства.
 
+![Все 19 белков семейства TetR (домен PF00440) с их E-value, найденные программой `hmmscan` против Pfam-A](screenshots/05_hmmer_tetr.png){#fig:hmmer width=95%}
+
 ## *De novo* построение мотива операторного сайта (MEME)
 
 ### Извлечение upstream-областей
@@ -628,6 +635,10 @@ MEME с параметрами `-mod anr -revcomp -nmotifs 5 -minw 14 -maxw 24
 
 ![Logo мотива `WTSATGATDAYSGTAWTSA` (выход MEME)](tetr/img/tetr_motif_logo.png){#fig:logo width=80%}
 
+![Веб-страница MEME: список 6 значимых мотивов (логотипы, E-value, число сайтов) и общая карта расположений на 32 апстрим-областях](screenshots/01_meme_overview.png){#fig:meme_over width=95%}
+
+![Подробное представление мотива №1 в MEME: PWM-логотип, информационное содержание (19,8 бит), Bayes Threshold 9,06647 и таблица сайтов в обучающей выборке](screenshots/02_meme_motif1_detail.png){#fig:meme_detail width=95%}
+
 ## Сканирование генома (FIMO)
 
 Сканирование полного генома при пороге $p < 10^{-4}$ дало 1 437
@@ -654,6 +665,8 @@ $p < 10^{-4}$ & 1 437 \\
 ожидаемое случайное число при таком пороге для двунаправленного
 сканирования генома 5 МБ составляет $5 \cdot 10^{6} \cdot 2 \cdot 10^{-6}
 \approx 10$, наблюдаемое — 32, что демонстрирует значимое обогащение.
+
+![Веб-вывод FIMO: раздел DATABASE AND MOTIFS, таблица 6 мотивов с шириной и лучшим совпадением, начало таблицы HIGH-SCORING MOTIF OCCURRENCES (1 437 хитов в геноме)](screenshots/03_fimo_overview.png){#fig:fimo width=95%}
 
 Полный список 32 сайтов с указанием ближайшего гена и характеристик
 приведён в **приложении А** (а также в файле `tetr/tetr_sites_summary.tsv`).
@@ -746,6 +759,8 @@ TetR\_site\_031 & $2{,}3\cdot10^{-7}$  & Sudilovsky\_04599 & \_04600 & hipO, г�
 
 Этот файл является основным результатом работы и подлежит сдаче
 вместе с настоящим отчётом.
+
+![Структура итогового GenBank-файла `Sudilovsky_TetR.gbk`: заголовок LOCUS, фичи `protein_bind` для предсказанных операторов TetR с квалификаторами `/bound_moiety`, `/note`, `/label` и сводная статистика по 32 сайтам](screenshots/06_genbank_tetr_sites.png){#fig:gbk width=95%}
 
 \newpage
 
